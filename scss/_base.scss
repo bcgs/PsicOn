@@ -1,10 +1,22 @@
 body {
     background-image: url('../images/texture-background.jpg');
-    padding-bottom: 50px;    // Body padding required (bootstrap . navbar)
+    // padding-bottom: 50px;    // Body padding required (bootstrap . navbar-fixed-bottom)
 }
 
 .content {
     @include make-row;
+}
+
+.btn_default {
+    display: block;
+    height: 40px;
+    padding: 10px 0;
+    font: bold 13px $main_font;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 9px 18px rgba(0,0,0,0.2);
 }
 
 .btn_transition {

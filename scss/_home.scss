@@ -1,30 +1,22 @@
 body {
     > .container {
         > .content {
-            height: 100%;
-            margin: 20% 0;
+            margin: 15% 0;
             > .home_text {
                 @include make-xs-column(12);
                 @include make-sm-column(12);
-                @include make-md-column(5);
+                @include make-md-column(12);
                 > p {
                     margin: 0;
                     font: bold 35px $main_font;
                     text-align: center;
+                    margin-bottom: 15px;
                 }
                 > a.appointment {
-                    display: block;
+                    @extend .btn_default;
                     width: 140px;
-                    height: 40px;
-                    margin: 15px auto 5px auto;
-                    padding: 10px 0;
-                    font: bold 13px $main_font;
+                    margin: 0 auto 10px auto;
                     background: $default_red;
-                    color: #fff;
-                    text-decoration: none;
-                    text-align: center;
-                    border-radius: 20px;
-                    border: 2px solid $default_gray;
                     &:hover {
                         @extend .btn_transition;
                         color: $default_red;
@@ -32,18 +24,10 @@ body {
                     }
                 }
                 > a.client {
-                    display: block;
+                    @extend .btn_default;
                     width: 109px;
-                    height: 40px;
                     margin: 0 auto 15px auto;
-                    padding: 10px 0;
-                    font: bold 13px $main_font;
                     background: $default_blue;
-                    color: #fff;
-                    text-decoration: none;
-                    text-align: center;
-                    border-radius: 20px;
-                    border: 2px solid $default_gray;
                     &:hover {
                         @extend .btn_transition;
                         color: $default_blue;
@@ -53,8 +37,14 @@ body {
             }
             > .chart {
                 @include make-xs-column(12);
-                @include make-sm-column(12);
-                @include make-md-column(7);
+                @include make-sm-column(10);
+                @include make-md-column(8);
+
+                @include make-xs-column-offset(0);
+                @include make-sm-column-offset(1);
+                @include make-md-column-offset(2);
+
+                padding-left: 3%;
             }
         }
     }

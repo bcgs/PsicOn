@@ -22,14 +22,8 @@
     body {
         > .container {
             > .content {
-                margin: 30% 0;
-                > .home_text {
-                    > p {
-                        font-size: 30px;
-                    }
-                }
                 > .chart {
-                    margin-top: 15px;
+                    padding: 0;
                 }
             }
         }
