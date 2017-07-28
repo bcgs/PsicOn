@@ -58,4 +58,30 @@ body {
             }
         }
     }
+    > #navigation {
+        #navigation__content {
+            > .navbar {
+                > .navbar-collapse {
+                    > ul.navbar-nav {
+                        float: right;
+                        margin-right: 40px;
+                        font: bold 13px $main_font;
+                        > li {
+                            &.active {
+                                > a {
+                                    background-color: transparent;
+                                    color: #FFBF00;
+                                }
+                            }
+                            > a {
+                                &:hover {
+                                    color: #FFBF00;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
