@@ -1,0 +1,13 @@
+body {
+    background-image: url('../images/texture-background.jpg');
+    padding-bottom: 50px;    // Body padding required (bootstrap . navbar)
+}
+
+.content {
+    @include make-row;
+}
+
+.btn_transition {
+    background: #fff;
+    transition: background-color 0.5s linear;
+}
