@@ -1,17 +1,26 @@
 // small devices like smartphones
 @media screen and (max-width: 768px) {
     body {
-        > .container {
+        > #top {
+            padding-top: 15%;
+            padding-bottom: 15%;
             > .content {
-                margin: 20% 0;
                 > .home_text {
                     > p {
                         font-size: 23px;
                     }
                 }
-                > .chart {
-                    margin-top: 15px;
-                }
+            }
+        }
+        > section {
+            padding-top: 10%;
+            padding-bottom: 10%;
+            > header > .heading {
+                margin-bottom: 5%;
+                font-size: 22px;
+            }
+            .howitworks__item {
+                margin-top: 15px;
             }
         }
     }

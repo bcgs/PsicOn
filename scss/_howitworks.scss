@@ -1,0 +1,21 @@
+body {
+    #howitworks { 
+        > #howitworks__items {
+            > .howitworks__item {
+                @include make-xs-column(12);
+                @include make-sm-column(4);
+                @include make-md-column(4);
+                text-align: center;
+                > img {
+                    margin: 0 auto;
+                }
+                > span {
+                    display: block;
+                    margin-top: 10px;
+                    font: bold 15px $main_font;
+                    color: #666;
+                }
+            }
+        }
+    }
+}
