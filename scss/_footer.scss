@@ -1,0 +1,50 @@
+body {
+    > footer {
+        #footer__items {
+            > .footer__item {
+                @include make-xs-column(12);
+                @include make-sm-column(4);
+                @include make-md-column(4);
+                text-align: center;
+                margin-top: 30px;
+                > img {
+                    margin: 15px auto;
+                }
+                > ul.list-group {
+                    margin: 15px auto;
+                    padding: 0;
+                    text-align: left;
+                    width: 281px;
+                    > li > a {
+                        font: 15px $main_font;
+                        color: $default_gray;
+                    }
+                }
+                > .payment_icons {
+                    > img {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer--icon {
+    font-size: 15px;
+    font-weight: bold;
+    color: $default_red;
+}
+
+.footer--title {
+    font: bold 15px $main_font;
+    color: #666;
+}
+
+.legal {
+    @include make-xs-column(12);
+    text-align: center;
+    padding: 2px 0;
+    font: 13px $main_font;
+    color: $default_gray;
+}

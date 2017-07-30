@@ -14,21 +14,22 @@ body {
                     text-align: center;
                     margin-bottom: 15px;
                 }
-                > a.appointment {
-                    @extend .btn_default;
-                    width: 140px;
-                    margin: 0 auto 10px auto;
-                    background: $default_red;
-                    &:hover {
-                        @extend .btn_transition;
-                        color: $default_red;
-                        border: 2px solid $default_red;
-                    }
-                }
+                // > a.appointment {
+                //     @extend .btn_default;
+                //     width: 140px;
+                //     margin: 0 auto 10px auto;
+                //     background: $default_red;
+                //     &:hover {
+                //         @extend .btn_transition;
+                //         color: $default_red;
+                //         border: 2px solid $default_red;
+                //     }
+                // }
                 > a.client {
                     @extend .btn_default;
                     width: 109px;
-                    margin: 0 auto 15px auto;
+                    // margin: 0 auto 15px auto;
+                    margin: 30px auto;
                     background: $default_blue;
                     &:hover {
                         @extend .btn_transition;

@@ -26,5 +26,22 @@ body {
                 }
             }
         }
+        > a.appointment {
+            @extend .btn_default;
+            width: 140px;
+            margin: 0 auto 10px auto;
+            background: $default_red;
+            &:hover {
+                @extend .btn_transition;
+                color: $default_red;
+                border: 2px solid $default_red;
+            }
+        }
+        > p {
+            margin-top: 60px;
+            font: bold 15px $main_font;
+            color: #666;
+            text-align: center;
+        }
     }
 }
