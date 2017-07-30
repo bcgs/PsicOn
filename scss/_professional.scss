@@ -1,0 +1,30 @@
+body {
+    > #professional {
+        > #professional__items {
+            > .professional--about {
+                @include make-xs-column(12);
+                @include make-sm-column(5);
+                @include make-md-column(5);
+
+                @include make-xs-column-offset(0);
+                @include make-sm-column-offset(2);
+                @include make-md-column-offset(2);
+                > p {
+                    margin-top: 0;
+                    font: 15px $main_font;
+                    color: $default_gray;
+                    text-align: justify;
+                }
+            }
+            > .professional--img {
+                @include make-xs-column(12);
+                @include make-sm-column(3);
+                @include make-md-column(3);
+                > img {
+                    margin: 0 auto;
+                    box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+                }
+            }
+        }
+    }
+}

@@ -16,7 +16,6 @@ body {
                     @include make-sm-column(3);
                     @include make-md-column(3);
                 }
-                margin-top: 15px;
                 text-align: center;
                 > img {
                     margin: 0 auto;
