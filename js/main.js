@@ -8,5 +8,11 @@ $("ul.navbar-nav > li > a").on('click', function(event) {
     event.preventDefault();
     $("ul.navbar-nav li").removeClass('active');
     $(this).parent().addClass('active');
-    $("html, body").animate({scrollTop:$(this.hash).offset().top-18}, 800);
+    $("html, body").animate({scrollTop:$(this.hash).offset().top-55}, 800);
 });
+
+// Check scrollTop
+//
+// $(window).scroll(function() {
+//     console.log($(this).scrollTop());
+// });
