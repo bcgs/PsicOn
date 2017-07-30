@@ -23,6 +23,13 @@
                 margin-top: 15px;
             }
         }
+        > #plans {
+            > #plans__items {
+                > .plans__item {
+                    margin-top: 15px;
+                }
+            }
+        }
     }
 }
 

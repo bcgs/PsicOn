@@ -1,0 +1,74 @@
+body {
+    > #plans {
+        > #plans__items {
+            > .plans__item {
+                &.email {
+                    @include make-xs-column(12);
+                    @include make-sm-column(3);
+                    @include make-md-column(3);
+
+                    @include make-xs-column-offset(0);
+                    @include make-sm-column-offset(3);
+                    @include make-md-column-offset(3);
+                }
+                &.skype {
+                    @include make-xs-column(12);
+                    @include make-sm-column(3);
+                    @include make-md-column(3);
+                }
+                margin-top: 15px;
+                text-align: center;
+                > img {
+                    margin: 0 auto;
+                }
+                > span {
+                    display: block;
+                    margin-top: 10px;
+                    &.title {
+                        font: bold 15px $main_font;
+                        color: $default_gray;
+                    }
+                    &.description {
+                        font: bold 14px $main_font;
+                        color: #666;                    // TODO: adicionar a variables
+                    }
+                }
+                > ul.list-group {
+                    list-style: none;
+                    border: solid;
+                    border-color: #777;
+                    padding: 0;
+                    width: 110px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: left;
+                    color: #666;
+                    > .active {
+                        background-color: #777;    // TODO: adicionar a variables
+                        color: #fff;
+                        text-align: center;
+                    }
+                    > li.list-group-item:before {
+                        content: "\2713\0020";    // using tick
+                        color: $default_blue;
+                        font-weight: bold;
+                        margin: 0 5px 0 5px;
+                    }
+                }
+            }
+        }
+        > .content {
+            > .extra_msg {
+                > span {
+                    @include make-xs-column(12);
+                    @include make-sm-column(12);
+                    @include make-md-column(12);
+                    display: block;
+                    text-align: center;
+                    font: bold 16px $main_font;
+                    color: $default_gray;
+                }
+            }
+        }
+    }
+}
