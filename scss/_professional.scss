@@ -12,7 +12,7 @@ body {
                 > p {
                     margin-top: 0;
                     font: 15px $main_font;
-                    color: $default_gray;
+                    color: $default_lighter_gray;
                     text-align: justify;
                 }
             }
@@ -40,7 +40,7 @@ body {
         > p {
             margin-top: 60px;
             font: bold 15px $main_font;
-            color: #666;
+            color: $default_gray;
             text-align: center;
         }
     }

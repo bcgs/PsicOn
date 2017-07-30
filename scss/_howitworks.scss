@@ -1,5 +1,5 @@
 body {
-    #howitworks { 
+    #howitworks {
         > #howitworks__items {
             > .howitworks__item {
                 @include make-xs-column(12);
@@ -13,7 +13,7 @@ body {
                     display: block;
                     margin-top: 10px;
                     font: bold 15px $main_font;
-                    color: #666;
+                    color: $default_light_gray;
                 }
             }
         }
