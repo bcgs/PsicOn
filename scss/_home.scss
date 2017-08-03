@@ -54,7 +54,7 @@ body {
     }
     > #navigation {
         #navigation__content {
-            > .navbar {
+            > .navbar-inverse {
                 background-color: $default_brown;
                 > .navbar-collapse {
                     > ul.navbar-nav {
@@ -65,14 +65,23 @@ body {
                             &.active {
                                 > a {
                                     background-color: transparent;
-                                    color: #FFBF00;
+                                    color: $default_yellow;
                                 }
                             }
                             > a {
                                 &:hover {
-                                    color: #FFBF00;
+                                    color: $default_yellow;
                                 }
                             }
+                        }
+                    }
+                }
+                > .navbar-header {
+                    > a.navbar-brand {
+                        margin-left: 40px;
+                        font: bold 18px $main_font;
+                        &:hover {
+                            color: $default_yellow;
                         }
                     }
                 }

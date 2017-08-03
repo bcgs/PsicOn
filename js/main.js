@@ -1,10 +1,14 @@
+//
+// JQuery functions
+//
+
 // Navbar toogle not hiding when clicking out
 $(document).on('click',function(){
 $('.collapse').collapse('hide');
 })
 
 // Page transition
-$("ul.navbar-nav > li > a").on('click', function(event) {
+$("ul.navbar-nav > li > a, a.navbar-brand").on('click', function(event) {
     event.preventDefault();
     $("ul.navbar-nav li").removeClass('active');
     $(this).parent().addClass('active');
