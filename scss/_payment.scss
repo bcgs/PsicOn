@@ -1,0 +1,27 @@
+body {
+    > #payment {
+        > #payment__items {
+            > .payment__item {
+                @include make-xs-column(12);
+                @include make-sm-column(3);
+                @include make-md-column(3);
+                text-align: center;
+                &.paypal {
+                    @include make-xs-column-offset(0);
+                    @include make-sm-column-offset(3);
+                    @include make-md-column-offset(3);
+                }
+                > img {
+                    display: block;
+                    margin: 0 auto;
+                }
+                > span {
+                    display: block;
+                    margin-top: 10px;
+                    font: bold 15px $main_font;
+                    color: $default_light_gray;
+                }
+            }
+        }
+    }
+}
